@@ -59,7 +59,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    void loadActivityMain(View view){
 
+        setContentView(R.layout.activity_main);
+    }
+    void loadTableViewLayout(View view){
 
+        setContentView(R.layout.my_tableview_layout);
+    }
 
 }
