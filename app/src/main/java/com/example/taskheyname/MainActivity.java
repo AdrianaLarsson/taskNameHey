@@ -7,8 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        TextView resultName = (TextView) findViewById(R.id.resultName);
+
+
+        TextView resultName = (TextView) findViewById(R.id.restNameShow);
         resultName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText firstName = (EditText) findViewById(R.id.firstName);
                 EditText secondName = (EditText) findViewById(R.id.secondName);
 
-                TextView resultnames = (TextView) findViewById(R.id.resultName);
+                TextView resultnames = (TextView) findViewById(R.id.restNameShow);
 
                 String nameOne = firstName.getText().toString();
                 String nameTwo = secondName.getText().toString();
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText firstName = (EditText) findViewById(R.id.firstName);
                 EditText secondName = (EditText) findViewById(R.id.secondName);
 
-                TextView resultNames = (TextView) findViewById(R.id.resultName);
+                TextView resultNames = (TextView) findViewById(R.id.restNameShow);
 
                 String nameOne = firstName.getText().toString();
                 String nameTwo = secondName.getText().toString();
@@ -68,4 +68,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.my_tableview_layout);
     }
 
+    void loadMainMenu(View view){
+        setContentView(R.layout.main_menu);
+
+
+    }
 }

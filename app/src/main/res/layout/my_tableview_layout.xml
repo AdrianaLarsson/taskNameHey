@@ -94,5 +94,12 @@
             android:onClick="loadActivityMain"
             android:padding="15sp"
             android:text="Button" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="loadMainMenu"
+            android:text="Button" />
     </TableRow>
 </TableLayout>
