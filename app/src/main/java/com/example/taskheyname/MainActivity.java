@@ -16,8 +16,28 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+           TextView textViewShowName = (TextView) findViewById(R.id.textViewShowName);
+        textViewShowName.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
 
-        TextView resultName = (TextView) findViewById(R.id.restNameShow);
+                 EditText editTextName = (EditText) findViewById(R.id.editTextName);
+
+                 TextView textViewShowName = (TextView) findViewById(R.id.textViewShowName);
+
+                 String name = editTextName.getText().toString();
+
+
+                 String nameRes = name;
+
+                 textViewShowName.setText("Hej" + nameRes + "");
+             }
+         });
+
+
+
+
+        TextView resultName = (TextView) findViewById(R.id.textViewShowName);
         resultName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText firstName = (EditText) findViewById(R.id.firstName);
                 EditText secondName = (EditText) findViewById(R.id.secondName);
 
-                TextView resultnames = (TextView) findViewById(R.id.restNameShow);
+                TextView resultnames = (TextView) findViewById(R.id.textViewShowName);
 
                 String nameOne = firstName.getText().toString();
                 String nameTwo = secondName.getText().toString();
@@ -45,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText firstName = (EditText) findViewById(R.id.firstName);
                 EditText secondName = (EditText) findViewById(R.id.secondName);
 
-                TextView resultNames = (TextView) findViewById(R.id.restNameShow);
+                TextView resultNames = (TextView) findViewById(R.id.textViewShowName);
 
                 String nameOne = firstName.getText().toString();
                 String nameTwo = secondName.getText().toString();

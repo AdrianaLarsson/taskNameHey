@@ -4,16 +4,17 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/restNameShow"
+        android:id="@+id/textViewShowName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clickable="true"
         android:gravity="center_horizontal"
         android:padding="30sp"
         android:text="Ditt namn"
         android:textSize="50sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="121dp"
         android:layout_marginTop="10sp"
