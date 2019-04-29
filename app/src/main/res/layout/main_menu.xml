@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:gravity="center_horizontal"
+        android:onClick="showNameTextView"
         android:padding="30sp"
         android:text="Ditt namn"
         android:textSize="50sp" />
@@ -45,6 +46,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
+            android:onClick="loadActivityMain"
             android:text="Button" />
     </LinearLayout>
 
@@ -55,13 +57,13 @@
 
         <RatingBar
             android:id="@+id/ratingBar"
-            android:layout_width="wrap_content"
+            android:layout_width="291dp"
             android:layout_height="wrap_content"
             android:layout_margin="15sp"
             android:layout_marginRight="10sp"
             android:layout_weight="0.7"
             android:baselineAligned="false"
-            android:padding="10sp" />
+            android:padding="20sp" />
     </LinearLayout>
 
 </LinearLayout>

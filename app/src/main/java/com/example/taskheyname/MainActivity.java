@@ -16,23 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-           TextView textViewShowName = (TextView) findViewById(R.id.textViewShowName);
-        textViewShowName.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
 
-                 EditText editTextName = (EditText) findViewById(R.id.editTextName);
-
-                 TextView textViewShowName = (TextView) findViewById(R.id.textViewShowName);
-
-                 String name = editTextName.getText().toString();
-
-
-                 String nameRes = name;
-
-                 textViewShowName.setText("Hej" + nameRes + "");
-             }
-         });
 
 
 
@@ -50,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 String nameOne = firstName.getText().toString();
                 String nameTwo = secondName.getText().toString();
 
-                String result = nameOne + nameTwo;
+                String result = nameOne + " " + nameTwo;
 
-                resultnames.setText("FAN VAD E BRA" + result + "");
+                resultnames.setText("FAN VAD Du e BRA " + result + " ");
             }
         });
 
@@ -70,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 String nameOne = firstName.getText().toString();
                 String nameTwo = secondName.getText().toString();
 
-                String result = nameOne + nameTwo;
+                String result = nameOne +  " "+ nameTwo;
 
                 resultNames.setText("Hej " + result + "");
 
@@ -91,6 +75,27 @@ public class MainActivity extends AppCompatActivity {
     void loadMainMenu(View view){
         setContentView(R.layout.main_menu);
 
+
+    }
+
+    public void showNameTextView(View view) {
+        TextView textViewShowName = (TextView) findViewById(R.id.textViewShowName);
+        textViewShowName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText editTextName = (EditText) findViewById(R.id.editTextName);
+
+                TextView textViewShowName = (TextView) findViewById(R.id.textViewShowName);
+
+                String name = editTextName.getText().toString();
+
+
+                String nameRes = name;
+
+                textViewShowName.setText("Hej " + nameRes + "");
+            }
+        });
 
     }
 }
