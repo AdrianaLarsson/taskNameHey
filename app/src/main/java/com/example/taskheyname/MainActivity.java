@@ -77,6 +77,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    void loadMainLayout(View view){
+
+        setContentView(R.layout.main_layout);
+    }
+
+
 
     public void showNameTextView(View view) {
         TextView textViewShowName = (TextView) findViewById(R.id.textViewShowName);

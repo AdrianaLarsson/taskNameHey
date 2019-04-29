@@ -101,5 +101,12 @@
             android:layout_height="wrap_content"
             android:onClick="loadMainMenu"
             android:text="Button" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="loadMainLayout"
+            android:text="Button" />
     </TableRow>
 </TableLayout>
